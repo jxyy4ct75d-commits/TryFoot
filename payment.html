@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TryFoot - Paiement</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo TryFoot" class="logo">
+    <h1>TryFoot</h1>
+    <p class="slogan">Enregistre ton paiement pour valider ta candidature</p>
+    <a href="index.html" class="btn">Retour à l'accueil</a>
+  </header>
+
+  <main>
+    <section class="paiement">
+      <h2>Paiement de candidature</h2>
+      <form id="paymentForm">
+        <label for="candidat">Nom du candidat :</label>
+        <input type="text" id="candidat" name="candidat" placeholder="Nom complet" required>
+
+        <label for="montant">Montant :</label>
+        <input type="number" id="montant" name="montant" value="10000" required>
+
+        <label for="currency">Devise :</label>
+        <select id="currency" name="currency">
+          <option value="XAF">FCFA</option>
+          <option value="MAD">MAD</option>
+        </select>
+
+        <label for="method">Méthode de paiement :</label>
+        <select id="method" name="method">
+          <option value="cash">Cash</option>
+          <option value="momo">MoMo</option>
+        </select>
+
+        <button type="submit">Valider le paiement</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Paiement enregistré ! (fonction backend à intégrer plus tard)');
+    });
+  </script>
+</body>
+</html>
