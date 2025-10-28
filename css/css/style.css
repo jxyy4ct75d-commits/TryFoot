@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #e53935; /* rouge inspiré du drapeau marocain */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header .logo {
+  height: 80px;
+}
+
+header .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #43a047; /* vert */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header .btn:hover {
+  background-color: #388e3c;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+section h2 {
+  color: #e53935;
+}
+
+.about, .contact {
+  margin-bottom: 30px;
+}
