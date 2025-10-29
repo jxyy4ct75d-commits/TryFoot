@@ -42,4 +42,52 @@ section h2 {
 
 .about, .contact {
   margin-bottom: 30px;
+
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
 }
+
+form input, form select, form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #43a047;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+}form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input, form select, form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #43a047;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
